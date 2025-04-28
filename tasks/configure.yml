@@ -44,14 +44,14 @@
     - ansible_version.full is version_compare('2.4', '>=')
     - ansible_selinux.status == "enabled"
 
-- name: Permitir tráfico en el puerto 9100 desde la red 162.244.211.0/24
-  community.general.ufw:
-    rule: allow
-    port: 9100
-    from_ip: 162.244.211.0/24
+# - name: Permitir tráfico en el puerto 9100 desde la red 162.244.211.0/24
+#   community.general.ufw:
+#     rule: allow
+#     port: 9100
+#     from_ip: 162.244.211.0/24
 
-- name: Permitir tráfico en el puerto 9100 desde 64.239.70.0/24
-  community.general.ufw:
-    rule: allow
-    port: 9100
-    from_ip: 64.239.70.0/24
+# - name: Permitir tráfico en el puerto 9100 desde 64.239.70.0/24
+#   community.general.ufw:
+#     rule: allow
+#     port: 9100
+#     from_ip: 64.239.70.0/24
